@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://clb24wehbru3j"]
+
+[ext_resource type="Theme" uid="uid://doig0mgyh1myr" path="res://base.tres" id="1_c0dwi"]
+
+[node name="Title" type="Node2D" unique_id=430437828]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=984708109]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=2105271146]
+offset_right = 480.0
+offset_bottom = 244.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=856379841]
+texture_filter = 1
+offset_right = 480.0
+offset_bottom = 55.0
+theme = ExtResource("1_c0dwi")
+theme_override_font_sizes/font_size = 32
+text = "Asylum Escape"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=705893677]
+offset_left = 1.0
+offset_top = 47.0
+offset_right = 480.0
+offset_bottom = 71.0
+theme = ExtResource("1_c0dwi")
+text = "Play"
+flat = true
