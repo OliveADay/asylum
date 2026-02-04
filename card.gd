@@ -6,8 +6,11 @@ var secret = 1;
 var maxWait = 1;
 var currentWait = 0;
 
-func switch():
-	secret = rand.randi_range(1,4);
+func switch(val, full):
+	if not full:
+		secret = val
+	else:
+		secret = rand.randi_range(1,val);
 
 func _ready() -> void:
 	switch();
