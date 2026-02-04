@@ -1,3 +1,17 @@
 [gd_scene format=3 uid="uid://cgnvogeihaj6r"]
 
+[ext_resource type="PackedScene" uid="uid://dv4xfu3475ji" path="res://card.tscn" id="1_f3sb7"]
+
 [node name="World" type="Node2D" unique_id=1106847932]
+
+[node name="Card" parent="." unique_id=1747360751 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 21)
+
+[node name="Card2" parent="." unique_id=2043590959 instance=ExtResource("1_f3sb7")]
+position = Vector2(37, 21)
+
+[node name="Card3" parent="." unique_id=2119881694 instance=ExtResource("1_f3sb7")]
+position = Vector2(37, 60)
+
+[node name="Card4" parent="." unique_id=1391354738 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
