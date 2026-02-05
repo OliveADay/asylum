@@ -20,19 +20,19 @@ position = Vector2(37, 60)
 position = Vector2(13, 60)
 
 [node name="Card5" parent="." unique_id=1297700510 instance=ExtResource("1_f3sb7")]
-position = Vector2(13, 60)
+position = Vector2(13, 99)
 
 [node name="Card6" parent="." unique_id=206780648 instance=ExtResource("1_f3sb7")]
-position = Vector2(13, 60)
+position = Vector2(37, 99)
 
 [node name="Card7" parent="." unique_id=1921979752 instance=ExtResource("1_f3sb7")]
-position = Vector2(13, 60)
+position = Vector2(61, 21)
 
 [node name="Card8" parent="." unique_id=262210690 instance=ExtResource("1_f3sb7")]
-position = Vector2(13, 60)
+position = Vector2(61, 60)
 
 [node name="Card9" parent="." unique_id=1625495960 instance=ExtResource("1_f3sb7")]
-position = Vector2(13, 60)
+position = Vector2(61, 99)
 
 [node name="Card10" parent="." unique_id=152705562 instance=ExtResource("1_f3sb7")]
 position = Vector2(13, 60)
