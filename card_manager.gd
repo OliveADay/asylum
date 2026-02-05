@@ -6,8 +6,9 @@ func _ready() -> void:
 	var secret = 1
 	var amount = 0
 	for card in cards:
-		card=secret
+		get_node(card).secret=secret
 		amount+=1
-		if amount==4:
+		if amount==5:
 			secret+=1
+			amount = 0
 	
