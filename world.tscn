@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://cgnvogeihaj6r"]
 
 [ext_resource type="PackedScene" uid="uid://dv4xfu3475ji" path="res://card.tscn" id="1_f3sb7"]
+[ext_resource type="Script" uid="uid://61vthuos1lxd" path="res://card_manager.gd" id="1_fj7yv"]
 
 [node name="World" type="Node2D" unique_id=1106847932]
+script = ExtResource("1_fj7yv")
+cards = [NodePath("Card"), NodePath("Card2"), NodePath("Card3"), NodePath("Card4"), NodePath("Card5"), NodePath("Card6"), NodePath("Card7"), NodePath("Card8"), NodePath("Card9"), NodePath("Card10"), NodePath("Card11"), NodePath("Card12"), NodePath("Card13"), NodePath("Card14"), NodePath("Card15"), NodePath("Card16"), NodePath("Card17"), NodePath("Card18"), NodePath("Card19"), NodePath("Card20")]
 
 [node name="Card" parent="." unique_id=1747360751 instance=ExtResource("1_f3sb7")]
 position = Vector2(13, 21)
@@ -14,4 +17,52 @@ position = Vector2(37, 21)
 position = Vector2(37, 60)
 
 [node name="Card4" parent="." unique_id=1391354738 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card5" parent="." unique_id=1297700510 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card6" parent="." unique_id=206780648 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card7" parent="." unique_id=1921979752 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card8" parent="." unique_id=262210690 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card9" parent="." unique_id=1625495960 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card10" parent="." unique_id=152705562 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card11" parent="." unique_id=446472611 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card12" parent="." unique_id=1066088986 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card13" parent="." unique_id=1443106570 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card14" parent="." unique_id=2001337194 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card15" parent="." unique_id=761601698 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card16" parent="." unique_id=79697519 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card17" parent="." unique_id=487525103 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card18" parent="." unique_id=285151138 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card19" parent="." unique_id=1329312445 instance=ExtResource("1_f3sb7")]
+position = Vector2(13, 60)
+
+[node name="Card20" parent="." unique_id=162739358 instance=ExtResource("1_f3sb7")]
 position = Vector2(13, 60)

@@ -6,14 +6,12 @@ var secret = 1;
 var maxWait = 1;
 var currentWait = 0;
 
-func switch(val, full):
+func switch(val, full, list):
 	if not full:
 		secret = val
 	else:
 		secret = rand.randi_range(1,val);
 
-func _ready() -> void:
-	switch();
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("click") and mouseOn:
