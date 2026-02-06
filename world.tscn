@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dv4xfu3475ji" path="res://card.tscn" id="1_f3sb7"]
 [ext_resource type="Script" uid="uid://61vthuos1lxd" path="res://card_manager.gd" id="1_fj7yv"]
+[ext_resource type="Theme" uid="uid://doig0mgyh1myr" path="res://base.tres" id="3_tlwt5"]
 
 [node name="World" type="Node2D" unique_id=1106847932]
 script = ExtResource("1_fj7yv")
@@ -73,3 +74,21 @@ offset_right = 515.0
 offset_bottom = 272.0
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=207518338]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1015572878]
+offset_right = 480.0
+offset_bottom = 244.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=608985854]
+texture_filter = 1
+offset_right = 480.0
+offset_bottom = 244.0
+theme = ExtResource("3_tlwt5")
+text = "you've proved your memory and are
+allowed to finally allowed to leave!!!!"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://clb24wehbru3j"]
 
+[ext_resource type="Script" uid="uid://bs5omey6asvmp" path="res://title.gd" id="1_ax32a"]
 [ext_resource type="Theme" uid="uid://doig0mgyh1myr" path="res://base.tres" id="1_c0dwi"]
 
 [node name="Title" type="Node2D" unique_id=430437828]
+script = ExtResource("1_ax32a")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=984708109]
 
@@ -29,3 +31,5 @@ offset_bottom = 71.0
 theme = ExtResource("1_c0dwi")
 text = "Play"
 flat = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
