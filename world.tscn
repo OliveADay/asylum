@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://dv4xfu3475ji" path="res://card.tscn" id="1_f3sb7"]
 [ext_resource type="Script" uid="uid://61vthuos1lxd" path="res://card_manager.gd" id="1_fj7yv"]
 [ext_resource type="Theme" uid="uid://doig0mgyh1myr" path="res://base.tres" id="3_tlwt5"]
+[ext_resource type="AudioStream" uid="uid://ci3tfqe3efpch" path="res://actual_win.wav" id="4_036b0"]
+[ext_resource type="AudioStream" uid="uid://gyoqv66aftjr" path="res://win.wav" id="4_aqk2v"]
 
 [node name="World" type="Node2D" unique_id=1106847932]
 script = ExtResource("1_fj7yv")
@@ -92,3 +94,19 @@ text = "you've proved your memory and are
 allowed to finally allowed to leave!!!!"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=1052398966]
+texture_filter = 1
+offset_right = 480.0
+offset_bottom = 35.0
+theme = ExtResource("3_tlwt5")
+text = "your not ever getting out of here if 
+you don't solve this"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="win_player" type="AudioStreamPlayer2D" parent="." unique_id=1704368687]
+stream = ExtResource("4_036b0")
+
+[node name="card_win_player" type="AudioStreamPlayer2D" parent="." unique_id=455082736]
+stream = ExtResource("4_aqk2v")

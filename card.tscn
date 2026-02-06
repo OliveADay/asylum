@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://blovq5ids2bby" path="res://cards-Sheet.png" id="1_kikvd"]
 [ext_resource type="Script" uid="uid://dbatnaxarlqpb" path="res://card.gd" id="1_rjlel"]
+[ext_resource type="AudioStream" uid="uid://dfcukajdvoowu" path="res://select.wav" id="3_q5obu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fj7yv"]
 size = Vector2(16, 32)
@@ -18,6 +19,9 @@ vframes = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1183609551]
 shape = SubResource("RectangleShape2D_fj7yv")
+
+[node name="select_player" type="AudioStreamPlayer2D" parent="." unique_id=687883103]
+stream = ExtResource("3_q5obu")
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

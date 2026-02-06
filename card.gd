@@ -16,6 +16,7 @@ func reset():
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("click") and mouseOn and $Sprite2D.frame != secret:
 		$Sprite2D.frame = secret
+		$select_player.play()
 		currentWait = maxWait
 		clicked.emit(secret)
 	if currentWait > 0:

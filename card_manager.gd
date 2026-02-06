@@ -12,6 +12,13 @@ func _ready() -> void:
 		get_node(card).clicked.connect(clicked)
 	reset()
 
+func done() -> bool:
+	for card in cards:
+		if get_node(card).get_child(0).frame==0:
+			return false
+	return true
+	print("done")
+
 func reset():
 	var secret = 1
 	var amount = 0
@@ -28,6 +35,7 @@ func clicked(secret):
 	if click_amount == 0:
 		last_secret = secret
 		click_amount+=1
+		mistakes =0
 	elif last_secret != secret:
 		mistakes+=1
 		if(mistakes == 3):
@@ -36,13 +44,16 @@ func clicked(secret):
 			reset()
 			mistakes =0 
 	else:
+		mistakes =0
 		click_amount +=1
 		last_secret = secret
 		if click_amount ==card_same_amount:
 			total+=1
 			click_amount = 0
+			$card_win_player.play()
 			print("card")
-		if total == 4:
+		if total == 4 or done():
 			$CanvasLayer.visible = true
+			$win_player.play()
 			
 	
