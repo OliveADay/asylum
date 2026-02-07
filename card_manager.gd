@@ -12,13 +12,6 @@ func _ready() -> void:
 		get_node(card).clicked.connect(clicked)
 	reset()
 
-func done() -> bool:
-	for card in cards:
-		if get_node(card).get_child(0).frame==0:
-			return false
-	return true
-	print("done")
-
 func reset():
 	var secret = 1
 	var amount = 0
@@ -32,6 +25,7 @@ func reset():
 	cards.shuffle()
 	print("reset")
 func clicked(secret):
+	total+=1
 	if click_amount == 0:
 		last_secret = secret
 		click_amount+=1
@@ -48,12 +42,17 @@ func clicked(secret):
 		click_amount +=1
 		last_secret = secret
 		if click_amount ==card_same_amount:
-			total+=1
 			click_amount = 0
 			$card_win_player.play()
 			print("card")
-		if total == 4 or done():
+	if total == 20:
 			$CanvasLayer.visible = true
 			$win_player.play()
 			
 	
+
+
+func _on_button_pressed() -> void:
+	print("scene load")
+	$CanvasLayer.visible = false
+	get_tree().reload_current_scene()

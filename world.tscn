@@ -87,13 +87,24 @@ color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="CanvasLayer" unique_id=608985854]
 texture_filter = 1
+offset_top = 86.0
 offset_right = 480.0
-offset_bottom = 244.0
+offset_bottom = 155.0
 theme = ExtResource("3_tlwt5")
 text = "you've proved your memory and are
 allowed to finally leave!!!!"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=650098376]
+texture_filter = 1
+offset_left = 107.0
+offset_top = 174.0
+offset_right = 363.0
+offset_bottom = 198.0
+theme = ExtResource("3_tlwt5")
+text = "return to main menu"
+flat = true
 
 [node name="Label" type="Label" parent="." unique_id=1052398966]
 texture_filter = 1
@@ -111,4 +122,4 @@ stream = ExtResource("4_036b0")
 [node name="card_win_player" type="AudioStreamPlayer2D" parent="." unique_id=455082736]
 stream = ExtResource("4_aqk2v")
 
-[node name="remember to add a button at the win screen that resets the full scene" type="Node2D" parent="." unique_id=1756994088]
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
